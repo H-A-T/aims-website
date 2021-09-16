@@ -1,0 +1,39 @@
+.navbar {
+	width: 100%;
+	display: flex;
+	background-color: #f3f3f3;
+	outline: 3px solid black;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 9999;
+    /* justify-content: space-around; /* if we want it */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+	color: Black;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-align: center  ;
+}
+
+@media screen and (max-width: 1100px) {
+	.navbar {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.navbar a:hover {
+	background-color: #ddb900; /* #999999 for gold */
+	color: black;
+}
+
+@media screen and (max-width: 1100px) {
+	.navbar {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}

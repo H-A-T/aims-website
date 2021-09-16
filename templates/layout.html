@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="../static/css/aims.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('about_page') }}">About</a>
+        <a href="{{ url_for('people_page') }}">People</a>
+        <a href="{{ url_for('projects_page') }}">Projects</a>
+        <a href="{{ url_for('publications_page') }}">Publications</a>
+        <a href="{{ url_for('events_page') }}">Events</a>
+        <a href="{{ url_for('contact_page') }}">Contact</a>
+    </div>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>

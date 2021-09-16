@@ -1,0 +1,17 @@
+@import 'navbar.css';
+
+body {
+    background-color: #000080;
+    color: white;
+	text-align: center;
+}
+
+p {
+    text-align: left;
+    margin: 3px;
+}
+.aboutimg {
+    float: left;
+    width: 25%;
+    margin: 5px;
+}
