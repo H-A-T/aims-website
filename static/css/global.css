@@ -1,0 +1,20 @@
+.pageHeader {
+    height: 150px;
+    background: #000066;
+}
+
+.pageContainer {
+    width: 75%;
+    background: white;
+}
+
+.backgroundDisplay {
+    background: linear-gradient(white, transparent 70%),
+    linear-gradient(0deg, white, transparent),
+    url("https://www.blog.adva.com/-/media/blog/header-images/2020/200826-artificial-intelligence-machine-learning-min.jpg?rev=62ab2be4b57d42328647d19d75566d1f&hash=B613A4A799AA2AFED56F73E9325AB268") no-repeat center;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}

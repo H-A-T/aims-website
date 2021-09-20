@@ -1,5 +1,64 @@
 {% extends "layout.html" %}
 {% block title %}People{% endblock %}
+{% block localStyle %}<link rel="stylesheet" href="../static/css/people.css"/>{% endblock %}
 {% block content %}
+    <h3>Director</h3><hr style="margin-bottom: 0px;">
+    <div class="card mb-3"> <!-- This the 'card' that will contain information about the person and their picture' -->
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start profile-pic" alt="...">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Name</h5>
+            <p class="card-text">About the person</p>
+            <p class="card-text">Here is a (somewhat) short summary of who I am, what I do, what my
+            areas of interest are, what I have worked on in the past, and what my current projects/research is.
+            I am not really sure what would happen if I type so much that my 'about me' would take up more space
+            than what the box gives me but I will just keep on typing until I do so to see what happens lol :)</p>
+            <p class="card-text"><small class="text-muted">Publications</small>
+            <br><small class="text-muted">Website</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <h3>Current Members</h3><hr style="margin-bottom: 0px;">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start profile-pic" alt="...">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Name</h5>
+              <h6 class="card-title">Major, minor, year</h6>
+            <p class="card-text">About the person</p>
+            <p class="card-text">Here is a (somewhat) short summary of who I am, what I do, what my
+            areas of interest are, what I have worked on in the past, and what my current projects/research is.</p>
+            <p class="card-text"><small class="text-muted">Research publications</small>
+            <br><small class="text-muted">Funding</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>AIMS Alumni</h3><hr style="margin-bottom: 0px;">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start profile-pic" alt="...">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Name</h5>
+            <h6 class="card-title">Major, minor</h6>
+            <h6 class="card-title">Fall 2021 - Spring 2022</h6>
+            <p class="card-text">Here is a summary of my research and the topic</p>
+            <p class="card-text">Here is a (somewhat) short summary of where I am now and what I currently do.</p>
+            <p class="card-text"><small class="text-muted">Where am I now? (maybe add linkedIn url?)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
 {% endblock %}
