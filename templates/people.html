@@ -2,63 +2,594 @@
 {% block title %}People{% endblock %}
 {% block localStyle %}<link rel="stylesheet" href="../static/css/people.css"/>{% endblock %}
 {% block content %}
-    <h3>Director</h3><hr style="margin-bottom: 0px;">
-    <div class="card mb-3"> <!-- This the 'card' that will contain information about the person and their picture' -->
-      <div class="row g-0">
-        <div class="col-md-3">
-          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start profile-pic" alt="...">
-        </div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <h5 class="card-title">Name</h5>
-            <p class="card-text">About the person</p>
-            <p class="card-text">Here is a (somewhat) short summary of who I am, what I do, what my
-            areas of interest are, what I have worked on in the past, and what my current projects/research is.
-            I am not really sure what would happen if I type so much that my 'about me' would take up more space
-            than what the box gives me but I will just keep on typing until I do so to see what happens lol :)</p>
-            <p class="card-text"><small class="text-muted">Publications</small>
-            <br><small class="text-muted">Website</small></p>
+    <!-- Director Card -->
+    <div class="mb-3" id="director">
+      <h3 class="person-category">Director</h3> <!-- medium breaking point 'co-md-3 -->
+      <div class="card p-3"> <!-- Start of card -->
+          <div class="row g-0">
+              <div class="col-md-3 image-body">
+                  <img src="../static/images/people/dr-rushit-dave.jpeg" class="img-fluid rounded profile-pic" alt="...">
+              </div>
+              <div class="col-md-9">
+                  <div class="card-body py-md-0">
+                      <h4 class="card-title">Dr. Rushit Dave</h4>
+                      <h5 class="card-title">Assistant Professor of Computer Science, UWEC</h5>
+                      <div class="d-flex flex-row">
+                          <div class="research-interests">
+                              <h6>Research Interests:</h6>
+                              <ul>
+                                  <li>Machine Learning</li>
+                                  <li>Deep Learning</li>
+                                  <li>Mobile Computing & IoT</li>
+                                  <li>Data Mining</li>
+                                  <li>Software Engineering</li>
+                              </ul>
+                          </div>
+                          <div class="education">
+                              <h6>Education:</h6>
+                              <ul>
+                                  <li>PhD: North Carolina A&T State University, NC, USA <i>(Computer Science)</i></li>
+                                  <li>MS: New York Institute of Technology, NY, USA <i>(Computer Science)</i></li>
+                                  <li>B.Tech: Dharmasinh Desai University, India <i>(Computer Engineering)</i></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
     </div>
 
-    <h3>Current Members</h3><hr style="margin-bottom: 0px;">
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-3">
-          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start profile-pic" alt="...">
+    <!-- Faculty Advisor Cards -->
+    <div class="mb-3" id="faculty">
+        <h3 class="person-category">Faculty Advisors</h3> <!-- medium breaking point 'co-md-3 -->
+        <div class="row g-0">
+            <div class="card col-6 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-md-4 image-body">
+                        <img src="../static/images/people/dr-benjamin-fine.jpeg" class="img-fluid rounded profile-pic" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body py-md-0">
+                            <h4 class="card-title">Dr. Benjamin Fine</h4>
+                            <h5 class="card-title">Assistant Professor of Computer Science, UWEC</h5>
+                            <h6>Research Interests:</h6>
+                            <ul>
+                                <li>Distributed Robotics</li>
+                                <li>Collective Behaviors</li>
+                                <li>Computational/Algorithmic Music</li>
+                                <li>CS and Robotics Education</li>
+                            </ul>
+                            <h6>Education:</h6>
+                            <ul>
+                                <li>Ph.D., Texas A&M University, College Station <i>(Computer Science)</i></li>
+                                <li>B.S., University of South Carolina, Columbia <i>(Computer Science)</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-6 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-md-4 image-body">
+                        <img src="../static/images/people/dr-mounika-vanamala.jpeg" class="img-fluid rounded profile-pic" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body py-md-0">
+                            <h4 class="card-title">Dr. Mounika Vanamala</h4>
+                            <h5 class="card-title">Assistant Professor of Computer Science, UWEC</h5>
+                            <h6>Research Interests:</h6>
+                            <ul>
+                                <li>Cyber Security</li>
+                                <li>Secure Software Engineering</li>
+                                <li>IOT Security</li>
+                                <li>Natural language processing/Text Mining</li>
+                            </ul>
+                            <h6>Education:</h6>
+                            <ul>
+                                <li>PhD: North Carolina A&T State University, NC, USA <i>(Computer Science)</i></li>
+                                <li>MS: North Carolina A&T State University, NC, USA <i>(Computer Science)</i></li>
+                                <li>B.Tech: Jawaharlal Nehru Technical University, India <i>(Computer Engineering)</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-6 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-md-4 image-body">
+                        <img src="../static/images/people/dr-naeem-seliya.jpg" class="img-fluid rounded profile-pic" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body py-md-0">
+                            <h4 class="card-title">Dr. Naeem Seliya</h4>
+                            <h5 class="card-title">Assistant Professor of Computer Science, UWEC</h5>
+                            <h6>Research Interests:</h6>
+                            <ul>
+                                <li>Data Mining and Machine Learning</li>
+                                <li>Big Data Analytics</li>
+                                <li>Computer Science Education</li>
+                                <li>Software Engineering</li>
+                            </ul>
+                            <h6>Education:</h6>
+                            <ul>
+                                <li>PhD: Florida Atlantic University, Boca Raton, FL</li>
+                                <li>MS: Florida Atlantic University, Boca Raton, FL</li>
+                                <li>B.S.: University of Mumbai, India</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <h5 class="card-title">Name</h5>
-              <h6 class="card-title">Major, minor, year</h6>
-            <p class="card-text">About the person</p>
-            <p class="card-text">Here is a (somewhat) short summary of who I am, what I do, what my
-            areas of interest are, what I have worked on in the past, and what my current projects/research is.</p>
-            <p class="card-text"><small class="text-muted">Research publications</small>
-            <br><small class="text-muted">Funding</small></p>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <h3>AIMS Alumni</h3><hr style="margin-bottom: 0px;">
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-3">
-          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img-fluid rounded-start profile-pic" alt="...">
+    <!-- Current Member Cards -->
+    <div class="mb-3 row g-0" id="current-members">
+        <h3 class="person-category">Current Members</h3>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/nile-siddiqui.jpg" class="img-fluid rounded current-profile-pic" alt="Nyle Siddiqui">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Nyle Siddiqui</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Authentication schemes based on mouse movement detection</p>
+                            <p class="card-text"><small class="text-muted">CS Honors</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/willem-van-haaften.jpg" class="img-fluid rounded current-profile-pic" alt="Willem Van Haaften">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Willem Van Haaften</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">IoT Securities</p>
+                            <p class="card-text"><small class="text-muted">Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/wei.jpeg" class="img-fluid rounded current-profile-pic" alt="Wei Zhong Tee">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Wei Zhong Tee</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Human Activity Recognition</p>
+                            <p class="card-text"><small class="text-muted">ORSP Diversity Mentoring program</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <h5 class="card-title">Name</h5>
-            <h6 class="card-title">Major, minor</h6>
-            <h6 class="card-title">Fall 2021 - Spring 2022</h6>
-            <p class="card-text">Here is a summary of my research and the topic</p>
-            <p class="card-text">Here is a (somewhat) short summary of where I am now and what I currently do.</p>
-            <p class="card-text"><small class="text-muted">Where am I now? (maybe add linkedIn url?)</small></p>
-          </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/zach-menter.png" class="img-fluid rounded current-profile-pic" alt="Zach Menter">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Zachary Menter</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Supervised Canvas/Blackboard System</p>
+                            <p class="card-text"><small class="text-muted">Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card --> <!-- This card is what was drawn by Dr. Dave -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/laura-pryor.jpg" class="img-fluid rounded current-profile-pic" alt="Laura Pryor">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Laura Pryor</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Behavioral Biometrics authentication using ML</p>
+                            <p class="card-text"><small class="text-muted">Blugolds Fellowship Scholar & Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/mingfu-huang.png" class="img-fluid rounded current-profile-pic" alt="Mingfu Huang">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Mingfu Huang</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Data Security in Autonomous Vehicles, Malware and Anti-Malware in Mobile Phones</p>
+                            <p class="card-text"><small class="text-muted">ORSP Student-Faculty Collaborative Research program</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/cole-pearson.jpg" class="img-fluid rounded current-profile-pic" alt="Cole Pearson">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Cole Pearson</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Curiosity Prediction using ML</p>
+                            <p class="card-text"><small class="text-muted">ORSP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card --> <!-- This card is what was drawn by Dr. Dave -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/nuo-xu.jpg" class="img-fluid rounded current-profile-pic" alt="Xu Nuo">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Xu Nuo</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Behavioral Biometrics authentication using ML</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/mitchell-hanson.png" class="img-fluid rounded current-profile-pic" alt="Mingfu Huang">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Mitchell Hanson</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Curiosity Prediction using ML</p>
+                            <p class="card-text"><small class="text-muted">ORSP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/mitchell-haley.jpg" class="img-fluid rounded current-profile-pic" alt="Mitchell Haley">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Mitchell Haley</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">CAPEK Attack patterns in SDLC using ML</p>
+                            <p class="card-text"><small class="text-muted">ORSP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card --> <!-- This card is what was drawn by Dr. Dave -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/ben-hallis.jpg" class="img-fluid rounded current-profile-pic" alt="Ben Hallis">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Ben Hallis</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Data Security in Autonomous Vehicles, Malware and Anti-Malware in Mobile Phones</p>
+                            <p class="card-text"><small class="text-muted">ORSP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/zach-deridder.jpg" class="img-fluid rounded current-profile-pic" alt="Zach DeRidder">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Zach DeRidder</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Authentication schemes based on mouse movement detection</p>
+                            <p class="card-text"><small class="text-muted">Sentry Insurance Foundation Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/collin-petry.jpg" class="img-fluid rounded current-profile-pic" alt="Collin Petry">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Collin Petry</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Supervised Canvas/Blackboard System</p>
+                            <p class="card-text"><small class="text-muted">ORSP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card --> <!-- This card is what was drawn by Dr. Dave -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/thomas-reither.jpg" class="img-fluid rounded current-profile-pic" alt="Thomas Reither">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Thomas Reither</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Authentication schemes based on mouse movement detection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/stuart-scamehorn.jpg" class="img-fluid rounded current-profile-pic" alt="Stuart Scamehorn">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Stuart Scamehorn</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Supervised Canvas/Blackboard System</p>
+                            <p class="card-text"><small class="text-muted">Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/karen-bolka.jpg" class="img-fluid rounded current-profile-pic" alt="Karen Bolka">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Karen Bolka</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Supervised Canvas/Blackboard System</p>
+                            <p class="card-text"><small class="text-muted">ORSP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card --> <!-- This card is what was drawn by Dr. Dave -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/sarah-kokal.jpg" class="img-fluid rounded current-profile-pic" alt="Sarah Kokal">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Sarah Kokal</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Behavioral Biometrics authentication using ML</p>
+                            <p class="card-text"><small class="text-muted">Blugolds Fellowship Scholar & Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/nick-lasky.jpeg" class="img-fluid rounded current-profile-pic" alt="Nick Lasky">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Nicholas Lasky</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">CAPEK Attack patterns in SDLC using ML</p>
+                            <p class="card-text"><small class="text-muted">Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/simon-arneberg.jpg" class="img-fluid rounded current-profile-pic" alt="Simon Arneberg">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Simon Arneberg</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Data mining in Smart Cities</p>
+                            <p class="card-text"><small class="text-muted">Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card --> <!-- This card is what was drawn by Dr. Dave -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/jake-mallet.pdf" class="img-fluid rounded current-profile-pic" alt="Jacob Curtis Mallet">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Jacob Curtis Mallet</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Behavioral Biometrics authentication using ML</p>
+                            <p class="card-text"><small class="text-muted">Computer Science Karlgaard Scholar</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/kyle-sargeant.jpg" class="img-fluid rounded current-profile-pic" alt="Kyle Sargeant">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Kyle Sargeant</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Computer Science and Psychology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="card col-4 p-3"> <!-- Start of card -->
+                <!-- Name's card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/people/simon-arneberg.jpg" class="img-fluid rounded current-profile-pic" alt="Simon Arneberg">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                            <h5 class="card-title">Casey Owen</h5>
+                            <h6 class="card-title">Computer Science</h6>
+                            <h6 class="card-title">[Year and Position]</h6>
+                            <p class="card-text">Audio Denoising using ML</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AIMS Alumni Member Cards -->
+    <div class="mb-3 row g-0" id="alumni-members">
+        <h3 class="person-category">AIMS Alumni</h3>
+        <div class="row g-0">
+            <div class="card p-3 col-4"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/placeholder.jpeg" class="img-fluid rounded profile-pic" alt="Sam Strecker">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                          <h5 class="card-title">Sam Strecker</h5>
+                          <h6 class="card-title">Computer Science - May 2021</h6>
+                          <p class="card-text">IoT Securities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-4"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/placeholder.jpeg" class="img-fluid rounded profile-pic" alt="David Xiaong Bee">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                          <h5 class="card-title">David Xiaong Bee</h5>
+                          <h6 class="card-title">Computer Science - May 2020</h6>
+                          <p class="card-text">Machine Learning in IoT Devices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-4"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/placeholder.jpeg" class="img-fluid rounded profile-pic" alt="Joe Ackerson">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                          <h5 class="card-title">Joe Ackerson</h5>
+                          <h6 class="card-title">Computer Science - May 2021</h6>
+                          <p class="card-text">Software Authentication using ML LSTM-RNN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="card p-3 col-4"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/placeholder.jpeg" class="img-fluid rounded profile-pic" alt="Kyle Kurtenbach">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                          <h5 class="card-title">Kyle Kurtenbach</h5>
+                          <h6 class="card-title">Computer Science - May 2021</h6>
+                          <p class="card-text">Mobile Computing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-4"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/placeholder.jpeg" class="img-fluid rounded profile-pic" alt="Logan Eckert">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                          <h5 class="card-title">Logan Eckert</h5>
+                          <h6 class="card-title">Computer Science - May 2021</h6>
+                          <p class="card-text">BluSys system - State level Runner Up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-4"> <!-- Start of card -->
+                <div class="row g-0">
+                    <div class="col-lg-4 image-body">
+                        <img src="../static/images/placeholder.jpeg" class="img-fluid rounded profile-pic" alt="Su Mao">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body py-lg-0">
+                          <h5 class="card-title">Su Mao</h5>
+                          <h6 class="card-title">Computer Science - May 2021</h6>
+                          <p class="card-text">Edge Computing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
