@@ -1,7 +1,3 @@
-.image-body {
-
-}
-
 .profile-pic {
     object-fit: cover;
 }
@@ -10,20 +6,33 @@
     object-fit: cover;
 }
 
-div {
-
-}
-
-.card {
-
-}
-
 .research-interests {
     width: 40%;
 }
 
 .education {
     width: 60%;
+}
+
+/* increase the font size of Dr. Dave's card */
+.dirDiv > ul {
+    font-size: large;
+}
+
+/* for sm break point */
+@media only screen and (max-width: 576px) {
+
+}
+
+/* for md break point */
+@media only screen and (max-width: 768px) {
+    .research-interests {
+        width: 100%;
+    }
+
+    .education {
+        width: 100%;
+    }
 }
 
 /* for lg break point */
