@@ -2,10 +2,6 @@
     object-fit: cover;
 }
 
-.current-profile-pic {
-    object-fit: cover;
-}
-
 .research-interests {
     width: 40%;
 }
@@ -20,7 +16,12 @@
 }
 
 .curImgDiv {
-    height: 200px;
+    height: 150px;
+}
+
+.current-profile-pic {
+    object-fit: cover;
+    height: 100%;
 }
 
 /* for sm break point */
@@ -57,9 +58,8 @@
         width: 75%;
     }
 
-    /* makes bulleted text slightly smaller when screen is resized */
-    .dirDiv > ul {
-
+    /* current member image all same height */
+    .curImgDiv {
+        height: 200px;
     }
-
 }
