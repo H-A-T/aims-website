@@ -3,3 +3,40 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.card-color {
+    background-color: #344789;
+    color: #ffffff;
+}
+
+#card1 {
+    background-color: #909fd5;
+}
+
+#card2 {
+    background-color: #7e8fce;
+}
+
+#card3 {
+    background-color: #6b7fc7;
+}
+
+#card4 {
+    background-color: #596fc0;
+}
+
+#card5 {
+    background-color: #465fb9;
+}
+
+#card6 {
+    background-color: #3f55a6;
+}
+
+#card7 {
+    background-color: #384c94;
+}
+
+#card8 {
+    background-color: #314281;
+}
