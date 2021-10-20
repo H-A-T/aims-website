@@ -2,10 +2,6 @@
     object-fit: cover;
 }
 
-.current-profile-pic {
-    object-fit: cover;
-}
-
 .research-interests {
     width: 40%;
 }
@@ -17,6 +13,15 @@
 /* increase the font size of Dr. Dave's card */
 .dirDiv > ul {
     font-size: large;
+}
+
+.curImgDiv {
+    height: 150px;
+}
+
+.current-profile-pic {
+    object-fit: cover;
+    height: 100%;
 }
 
 /* for sm break point */
@@ -39,5 +44,22 @@
 @media only screen and (max-width: 992px) {
     .current-profile-pic {
         height: 100%;
+    }
+
+    #drDave {
+        width: 45%;
+    }
+
+    .faculty-pic {
+        width: 70%;
+    }
+
+    .current-profile-pic {
+        width: 75%;
+    }
+
+    /* current member image all same height */
+    .curImgDiv {
+        height: 200px;
     }
 }
