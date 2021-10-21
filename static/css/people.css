@@ -21,6 +21,7 @@
 
 .current-profile-pic {
     object-fit: cover;
+    width: 100%;
     height: 100%;
 }
 
@@ -42,10 +43,6 @@
 
 /* for lg break point */
 @media only screen and (max-width: 992px) {
-    .current-profile-pic {
-        height: 100%;
-    }
-
     #drDave {
         width: 45%;
     }
