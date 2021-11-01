@@ -1,2 +1,2 @@
-web: gunicorn aims_website:server
+web: gunicorn server:app
 heroku ps:scale web=1
