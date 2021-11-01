@@ -1,5 +1,24 @@
 img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+}
+card {
+    overflow: hidden;
+}
+
+.cardimgright {
+    float: right;
+    height: 250px;
+    width: auto;
+}
+
+.cardimgleft {
+    float: left;
+    height: 250px;
+    width: auto;
+
+}
+card {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
