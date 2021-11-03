@@ -4,6 +4,10 @@ img {
     margin-right: auto;
 }
 
+.aboutimg {
+    width: 100%;
+}
+
 .card-color {
     background-color: #344789;
     color: #ffffff;
