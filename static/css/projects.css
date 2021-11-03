@@ -2,23 +2,27 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-card {
-    overflow: hidden;
+
+.project-img {
+    width: 100%;
 }
 
-.cardimgright {
-    float: right;
-    height: 250px;
-    width: auto;
+.project-img {
+    height: 70%;
 }
 
-.cardimgleft {
-    float: left;
-    height: 250px;
-    width: auto;
+/* for lg break point */
+@media only screen and (max-width: 992px) {
+    .project-img {
+        height: auto;
+    }
 
-}
-card {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* some images are pretty tall when in small screen display */
+    .larger-img-resize {
+        height: 250px;
+    }
+
+    .xlarger-img-resize {
+        height: 325px;
+    }
 }
