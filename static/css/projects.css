@@ -2,3 +2,27 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.project-img {
+    width: 100%;
+}
+
+.project-img {
+    height: 70%;
+}
+
+/* for lg break point */
+@media only screen and (max-width: 992px) {
+    .project-img {
+        height: auto;
+    }
+
+    /* some images are pretty tall when in small screen display */
+    .larger-img-resize {
+        height: 250px;
+    }
+
+    .xlarger-img-resize {
+        height: 325px;
+    }
+}
