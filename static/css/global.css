@@ -18,4 +18,15 @@
 
 html {
     height: 100%;
+    font-size: 100%;
+}
+
+@media (max-device-width: 720px){
+    html {
+        font-size: 300%;
+    }
+
+    .pageContainer {
+        width: 100%;
+    }
 }
