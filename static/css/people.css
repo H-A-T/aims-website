@@ -10,11 +10,6 @@
     width: 60%;
 }
 
-/* increase the font size of Dr. Dave's card */
-.dirDiv > ul {
-    font-size: large;
-}
-
 .curImgDiv {
     height: 150px;
 }
@@ -39,6 +34,7 @@
     .education {
         width: 100%;
     }
+
 }
 
 /* for lg break point */
@@ -47,16 +43,26 @@
         width: 45%;
     }
 
+    /* specifically for Dr. Dave's research interests and education */
+    .dirDiv.research-interests {
+        width: 100%;
+    }
+
+    /* specifically for Dr. Dave's research interests and education */
+    .dirDiv.education {
+        width: 100%;
+    }
+
     .faculty-pic {
-        width: 70%;
+        width: 40%;
     }
 
     .current-profile-pic {
-        width: 75%;
+        width: 60%;
     }
 
-    /* current member image all same height */
+    /* current member images all same height */
     .curImgDiv {
-        height: 200px;
+        height: 250px;
     }
 }
