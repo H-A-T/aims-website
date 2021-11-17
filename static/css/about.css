@@ -46,3 +46,7 @@
 #card11 {
     background-color: #142c85;
 }
+
+div > img {
+    width: 100%;
+}
